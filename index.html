@@ -3,33 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is an awesome website">
-        <title>Clay's Website</title>
+        <title>Display Date</title>
     </head>
     <body>
         <header>
             <nav>
-                <!--Navigation links go here-->
+                
             </nav>
         </header>
        
         <main>
-            <img width="1000" height="600" src="https://twitchinsider.com/wp-content/uploads/2017/11/5a1a5515e13754a26bd4bcb8558a5b90.png" alt="">
-            <article>
+            <img 
+                src="https://twitchinsider.com/wp-content/uploads/2017/11/5a1a5515e13754a26bd4bcb8558a5b90.png" alt="Donkey Kong" > 
+            
+           
                 <section>
-                    <aside>
-                       <!--Example of aside tag is an advertisement-->
-                   </aside> 
+                    <script>
+                        function displayDate() {
+                            document.getElementById("showDate").innerHTML = Date();
+                        }
+                    </script> 
+
                 </section>
-            </article>
+            
         </main>
 
         <footer>
         </footer>
         
+        <h2>
+            <button type="button" onclick="displayDate()">Show Time & Date</button>
+            <p id="showDate"></p>
+        </h2>
         
-        <h2>Clay's Website</h2>
-        <!--This is a comment-->
-        <p><big>This</big> is my <b>Paragraph</b></p>
-        <p>This is another paragraph</p>
+        <p></p>
+        <p></p>
     </body>
 </html>
